@@ -1,13 +1,13 @@
 /*Main*/
 
 @font-face {
-	font-family:"Univers-Condensed";
-	src:url("fonts/UniversLTStd-Cn.otf") format("opentype");
+	font-family:'Univers-Cn';
+	src: url('fonts/UniversLTStd-Cn.otf') format ('opentype');
 }
 
 @font-face {
-	font-family:"Univers-Condensed-Light";
-	src:url("fonts/UniversLTStd-LightCn.otf") format("opentype");
+	font-family:'Univers-Cn-Lt';
+	src: url('fonts/UniversLTStd-LightCn.otf');
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
@@ -29,7 +29,7 @@ body {
 	font-size:.750em;
 	-epub-hyphens:none;
 	hyphens: none;
-	font-family: "Univers-Condensed", helvetica, arial, sans-serif;
+	font-family: "Univers-Cn", helvetica, arial, sans-serif;
 	padding-bottom: 50px;
 	width: 100%;
 	text-align: center;
@@ -54,7 +54,7 @@ a[href^="mailto:"] {
 p.Basic-Paragraph {
 	-epub-ruby-position:over;
 	color:#000000;
-	font-family:"Univers-Condensed", "Helvetica", "arial", sans-serif;
+	font-family:"Univers-Cn", "Helvetica", "arial", sans-serif;
 	font-size:.750em;
 	font-style:normal;
 	font-variant:normal;
@@ -196,6 +196,8 @@ p.Basic-Paragraph {
 	max-width: 480px;
 	position: relative;
 	display: block;
+	
+
 }
 
 .style-container{
@@ -210,16 +212,18 @@ p.Basic-Paragraph {
 
 .gallery-container{
 	text-align: center;
-	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10%;
+	padding-bottom: 10%;
 	width:90%;
 	max-width: 900px;
-	padding-top: 6%;
 	position: relative;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .gallery-container img{
-	max-width: 480px;
+	max-width: 480px;	
 }
 
 .third {
@@ -326,7 +330,7 @@ p.Basic-Paragraph {
 .press-icon {
 	max-width: 150px;
 	height: auto;
-	float: left;
+	/*float: left;*/
 	display: inline-block;
 	padding: 8%;
 
@@ -435,7 +439,7 @@ img.press {
 
 .copyright {
 	color: #555;
-	font-family:"Univers-Condensed", "Helvetica", "arial", sans-serif;
+	font-family:"Univers-Cn", "Helvetica", "arial", sans-serif;
 	font-size:.600em;
 	font-style:normal;
 	font-weight:lighter;

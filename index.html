@@ -31,19 +31,21 @@
 		<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['head', 'about', 'press','latest-news', 'retail', 'contact'],
+				anchors: ['head', 'about', 'press','news', 'contact'], 
+				// add 'retail', to anchors for retail page between 'news', and 'contact'
 				scrollingSpeed: 666,
 				css3: true,
 				loopHorizontal: false,
 				fitToSectionDelay: 666,
 				resize : false,
 				scrollOverflow: true,
-				// normalScrollElements: '.gallery-container',
+				normalScrollElements: '.gallery-container',
 			});
 			$(function(){
     			$('.gallery-container').slimScroll({
-    				height: 'auto',
-    				allowPageScroll: false,
+    				height: '100%',
+    				allowPageScroll: true,
+    				alwaysVisible: true,
     		});
 			});
 		});
@@ -62,8 +64,9 @@
 			<div class="navigation">
 				<a class="navigation-link" href="#about">About &nbsp;</a>
 				<a class="navigation-link" href="#press">Press &nbsp;</a>
-				<a class="navigation-link" href="#latest-news">Latest News&nbsp;</a>
-				<a class="navigation-link" href="#retail">Retail&nbsp;</a>
+				<a class="navigation-link" href="#latest-news">News&nbsp;</a>
+				<!-- UNCOMMENT BELOW FOR RETAIL PAGE LINK -->
+				<!-- <a class="navigation-link" href="#retail">Retail&nbsp;</a>  -->
 				<a class="navigation-link" href="#contact">Contact</a></div> 
 		</div>
 		<!-- +FOOTER+ -->
@@ -188,14 +191,18 @@
 			<div class="section" id="section3">
 				<div class="slide">
 					<div class="container">
-						<div class="press-icon">
-							<a href="http://nyti.ms/1UIhLNH" target="_blank"><img src="media/press/nyt_icon.png" alt="Brandon Maxwell NYT"></a>
-						</div>
-						<div class="press-icon">
-							<a href="http://www.vogue.com/13350627/lady-gaga-brandon-maxwell-emmy-awards-2015-celebrity-red-carpet-style/" target="_blank"><img src="media/press/vogue_icon.png" alt="Brandon Maxwell Vogue"></a>
-						</div>
-						<div class="press-icon">
-							<a href="http://wwd.com/fashion-news/fashion-features/brandon-maxwell-lady-gaga-designer-stylist-10213541/" target="_blank"><img src="media/press/wwd_icon.png" alt="Brandon Maxwell WWD"></a>
+						<div class="row">
+							<div class="col-md-3">	
+								<div class="press-icon">
+									<a href="http://nyti.ms/1UIhLNH" target="_blank"><img src="media/press/nyt_icon.png" alt="Brandon Maxwell NYT"></a>
+								</div>
+								<div class="press-icon">
+									<a href="http://www.vogue.com/13350627/lady-gaga-brandon-maxwell-emmy-awards-2015-celebrity-red-carpet-style/" target="_blank"><img src="media/press/vogue_icon.png" alt="Brandon Maxwell Vogue"></a>
+								</div>
+								<div class="press-icon">
+									<a href="http://wwd.com/fashion-news/fashion-features/brandon-maxwell-lady-gaga-designer-stylist-10213541/" target="_blank"><img src="media/press/wwd_icon.png" alt="Brandon Maxwell WWD"></a>
+								</div>	
+							</div>	
 						</div>
 					</div>
 				</div>
@@ -204,19 +211,23 @@
 			<div class="section">
 				<div class="container">
 					<div class="news-title">
-						latest news
+						News
+						<div class="row">
+							<div class="col-md-3">
+								<!-- insert press icons here -->
+							</div>
 					</div>
 					<div class="news-thumbnail">
 					</div>
 				</div>
 			</div>
 			<!-- +RETAIL+ -->
-			<div class="section">
+			<!-- <div class="section">
 				<div class="container">
 					<div class="retail-title">
 						Retail
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<!-- +CONTACT+ -->
 			<div class="section" id="section4">
